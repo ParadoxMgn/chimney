@@ -1,0 +1,85 @@
+.video {
+  padding-bottom: 99px;
+  @media (max-width: $wd3) {
+    padding-bottom: 57px;
+  }
+  @media (max-width: $wdm) {
+    padding-bottom: 48px;
+  }
+  & .mark-up {
+    margin-left: -3px;
+    @media (max-width: $wd3) {
+      margin-left: 0;
+    }
+    @media (max-width: $wdm) {
+      margin-bottom: 11px;
+      transform: translateX(1px);
+    }
+  }
+  & h2 {
+    margin-bottom: 67px;
+    margin-left: -3px;
+    @media (max-width: $wd3) {
+      margin-bottom: 28px;
+      margin-left: 0;
+    }
+    @media (max-width: $wdm) {
+      padding-left: 1px;
+    }
+  }
+  &__description {
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $dark-color;
+    @media (max-width: $wd3) {
+      margin-bottom: 0;
+      padding-left: 2px;
+    }
+    @media (max-width: $wdm) {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+  &__wrapper {
+    padding-top: 49px;
+    background: url('../img/video/blob.png') 31px 112px / 472px 294px no-repeat, url('../img/video/blob.png') 557px 14px / 630.11px 392.06px no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 1220px) {
+      background: none;
+    }
+    @media (max-width: $wd3) {
+      padding-top: 33px;
+    }
+    @media (max-width: $wdm) {
+      padding-top: 23px;
+    }
+  }
+  &__pleer {
+    margin-left: -20px;
+    max-width: 771px;
+    width: 100%;
+    @media (max-width: $wd3) {
+      margin-left: 0;
+      padding-left: 2px;
+    }
+  }
+  &__dots-1,
+  &__dots-2 {
+    position: absolute;
+    @media (max-width: 1220px) {
+      display: none;
+    }
+  }
+  &__dots-1 {
+    left: 94.5px;
+    top: 273px;
+  }
+  &__dots-2 {
+    right: 109px;
+    top: -1px;
+  }
+}

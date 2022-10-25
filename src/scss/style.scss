@@ -1,0 +1,17 @@
+// базовые подключения
+@import "helpers/vars";
+@import "helpers/mixins";
+@import "helpers/fonts";
+@import "helpers/null";
+@import "helpers/settings";
+
+// компоненты
+@import "components/header";
+@import "components/hero";
+@import "components/stages";
+@import "components/reasons";
+@import "components/consultation";
+@import "components/video";
+@import "components/photo";
+@import "components/footer";
+@import "components/popup";

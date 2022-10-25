@@ -1,0 +1,25 @@
+section.consultation
+  .container 
+    .consultation__column
+      .consultation__title необходима консультация?
+      .consultation__sub-title оставьте заявку или свяжитесь с нами в социальных сетях
+      ul.consultation__list
+          li.consultation__item
+            a.consultation__link(href="#")
+              +svg('vk1', 23, 23, 'vk')
+          li.consultation__item
+            a.consultation__link(href="#")
+              +svg('telegram1', 22, 23, 'telegram')
+          li.consultation__item
+            a.consultation__link(href="#")
+              +svg('instagram1', 18, 19, 'instagram')
+          li.consultation__item
+            a.consultation__link(href="#")
+              +svg('whatsapp1', 18, 19, 'whatsapp')
+      form.consultation__form.form(action="#")
+        .form__title Для <span>консультации</span> заполните форму!
+        .form__sub-title С Вами свяжутся в ближайшее время
+        .form__inputs 
+          input.form__input.input-name(type="text" placeholder="Ваше имя" required)
+          input.form__input.input-phone(type="tel" placeholder="Ваш телефон" required)
+          button.form__btn отправить

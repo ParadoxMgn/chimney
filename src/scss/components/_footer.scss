@@ -1,0 +1,107 @@
+.footer {
+  padding: 88px 0 92px;
+  background-color: $footer-color;
+  @media (max-width: $wd3) {
+    padding: 24px 0 23px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__block {
+    @media (max-width: 1220px) {
+      flex: 0 1 456px;
+    }
+  }
+  &__left-block {
+    @media (max-width: $wd3) {
+      display: none;
+    }
+  }
+  &__title {
+    margin-bottom: 19px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: $light-color;
+    @media (max-width: $wd3) {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    margin-bottom: 19px;
+    flex: 0 1 207px;
+  }
+  &__link,
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $light-color;
+  }
+  &__middle-block {
+    @media (max-width: $wd3) {
+      display: none;
+    }
+  }
+  &__right-block {
+    flex: 0 0 308px;
+    & .footer__title {
+      transform: translateY(-2px);
+    }
+    @media (max-width: $wd3) {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__text {
+    padding-left: 24px;
+    font-family: 'Lato';
+    @media (max-width: $wd3) {
+      display: none;
+    }
+  }
+  &__time {
+    margin-bottom: 15px;
+    margin-left: -1px;
+    background: url('../img/footer/clock.svg') 0 0 no-repeat;
+    & span {
+      font-family: 'Lato';
+      color: $text-color;
+    }
+  }
+  &__address {
+    margin-bottom: 28px;
+    margin-left: -2px;
+    padding-left: 25px;
+    background: url('../img/footer/place.svg') 0 0 no-repeat;
+    line-height: 20px;
+  }
+  &__list-soc {
+    display: flex;
+    width: 203px;
+    justify-content: space-between;
+    @media (max-width: $wd3) {
+      transform: translate(-2px, 1px);
+    }
+    @media (max-width: $wdm) {
+      transform: translate(-3px, 0);
+    }
+  }
+  &__link-soc {
+    & .vk {
+      transform: translateX(1px);
+    }
+    & .instagram {
+      transform: translate(1px, 2px);
+    }
+    & .whatsapp {
+      transform: translate(2px, 2px);
+    }
+  }
+}

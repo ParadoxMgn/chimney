@@ -1,0 +1,56 @@
+header(class="header")
+  .header__row
+    .header__logotype
+      .header__logo
+        img.header__logo-img(loading="lazy" src="img/header/Logo.png" width="100" height="97" alt="Logo")
+      .header__burger
+        button.header__btn-burger.btn-circle.blue
+          .header__burger-line
+      nav.header__menu.menu
+        ul.menu__list
+          li.menu__item
+            a.menu__link(href="#") Каталог товаров
+          li.menu__item
+            a.menu__link(href="#") доставка и оплата
+          li.menu__item
+            a.menu__link(href="#") Цены
+          li.menu__item
+            a.menu__link(href="#") Контакты
+    .header__contacts
+      .header__phone
+        a.header__link-phone(href="tel:+78125092198") +7 (812) <span>509 21 98</span>
+      .header__call-me
+        a.header__link-call-me(href="#") перезвоните мне
+    .header__social.social
+      ul.social__list
+        li.social__item
+          a.social__link(href="#")
+            +svg('vk', 20, 20, 'vk')
+        li.social__item
+          a.social__link(href="#")
+            +svg('telegram', 19, 20, 'telegram')
+        li.social__item
+          a.social__link(href="#")
+            +svg('instagram', 15, 16, 'instagram')
+        li.social__item
+          a.social__link(href="#")
+            +svg('whatsapp', 15, 16, 'whatsapp')
+    .header__btns
+      button.header__btn-search.btn-circle
+        +svg('loupe', 22, 22, 'loupe')
+      button.header__btn-like.btn-circle
+        +svg('heart', 23, 23, 'heart')
+        +svg('heart-like', 23, 23, 'heart-like hid')
+      button.header__btn-cart.btn-circle
+        +svg('cart', 24, 24, 'cart')
+      .header__burger
+        button.header__btn-burger.btn-circle.blue
+          .header__burger-line
+  .hidden-menu
+    .hidden-menu__wrapper 
+      .hidden-menu__close.close
+      .hidden-menu__content 
+        .hidden-menu__simple-text Скоро здесь, что-нибудь появится
+        .hidden-menu__nav 
+        .hidden-menu__con
+        .hidden-menu__soc
