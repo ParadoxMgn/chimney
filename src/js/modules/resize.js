@@ -15,8 +15,10 @@ export const resize = () => {
   
   
   const checkWidth = () => {
-    if (body.clientWidth <= 1699.98) {
+    console.log(body.clientWidth);
+    if (body.clientWidth <= 1709) {
       hiddenMenuNav.append(headerMenu);
+      
     } else {
       headerLogotype.append(headerMenu);
     }

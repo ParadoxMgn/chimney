@@ -342,7 +342,7 @@ b {
   align-items: center;
   flex: 0 1 864px;
 }
-@media (max-width: 1699.98px) {
+@media (max-width: 1708px) {
   .header__logotype {
     justify-content: start;
     flex: 0 1 auto;

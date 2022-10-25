@@ -36,7 +36,7 @@
     justify-content: space-between;
     align-items: center;
     flex: 0 1 864px;
-    @media (max-width: $wd1) {
+    @media (max-width: 1708px) {
       justify-content: start;
       flex: 0 1 auto;
     }
