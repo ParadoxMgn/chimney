@@ -5,7 +5,6 @@ export const resize = () => {
   const hiddenMenuNav = document.querySelector('.hidden-menu__nav');
   const hiddenMenuSoc = document.querySelector('.hidden-menu__soc');
   const headerSocial = document.querySelector('.header__social');
-  const headerRow = document.querySelector('.header__row');
   const hiddenMenuCon = document.querySelector('.hidden-menu__con');
   const headerContacts = document.querySelector('.header__contacts');
   const consultationTitle = document.querySelector('.consultation__title');
@@ -15,7 +14,6 @@ export const resize = () => {
   
   
   const checkWidth = () => {
-    console.log(body.clientWidth);
     if (body.clientWidth <= 1709) {
       hiddenMenuNav.append(headerMenu);
       
